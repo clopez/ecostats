@@ -11,3 +11,10 @@
   Debian: /usr/share/doc/collectd-core/examples/collection3
 
 * Check the paths to the collectd rrd files in run.cgi
+
+* To enable the support for show the status of the hosts you need to add the
+  following to /etc/aliases:
+
+  webcollectd: "|/var/www/stats/ecostats/run.cgi -pipe"
+
+  And add webcollectd@yourdomain.com to the plugin notify_email in collectd.conf
