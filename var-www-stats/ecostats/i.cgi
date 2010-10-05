@@ -24,4 +24,4 @@ try:
 except:
     query = "hostname=beton;plugin=load;type=load;begin=-3600"
 
-print '<img src="/static/c/graph.cgi?%s">' % query
+print '<img src="/stats/collection3/bin/graph.cgi?%s">' % query

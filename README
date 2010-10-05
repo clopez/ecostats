@@ -1,0 +1,13 @@
+* Copy the directory var-www-stats to /var/www/stats
+
+* Enable the supplied apache2 configuration. Modify it to fit your needs.
+
+* Install the required python dependencies (see the imports from run.cgi)
+
+  apt-get install python-rrdtool
+
+* Ensure that the symlink /var/www/stats/collection3 points to collection3
+
+  Debian: /usr/share/doc/collectd-core/examples/collection3
+
+* Check the paths to the collectd rrd files in run.cgi
