@@ -8,7 +8,7 @@
 #import cgi
 #cgi.test()
 #
-# URI translator 
+# URI translator
 # used for flexible change of graph rendering helper
 
 import os
@@ -20,8 +20,8 @@ print
 
 # then simple forward QUERY_STRING to proper script and include it on the helper page
 try:
-        query = os.environ['QUERY_STRING']
+    query = os.environ['QUERY_STRING']
 except:
-        query = "hostname=beton;plugin=load;type=load;begin=-3600"
+    query = "hostname=beton;plugin=load;type=load;begin=-3600"
 
 print '<img src="/static/c/graph.cgi?%s">' % query
